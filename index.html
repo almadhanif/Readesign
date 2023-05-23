@@ -13,7 +13,42 @@
       rel="stylesheet"
     />
   </head>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: '16px',
+        },
+        extend: {
+          colors: {
+            hijaumuda: '#94EC08',
+            hijautua: '#98E51E',
+            kuning: '#F4C447',
+            darkblue: '#25316D',
+            biru: '#24DCF2',
+            ijo: '#71A72D',
+            gelap: '#0B2027',
+            terang: '#8CBAB4',
+          },
+          fontFamily: {
+            caveat: ['Caveat Brush'],
+            fuzzy: ['Fuzzy Bubbles'],
+            poppins: ['Poppins'],
+            peralta: ['Peralta'],
+            inter: ['Inter'],
+          },
+          screens: {
+            '2xl': '1320px',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link href="dist/output.css" rel="stylesheet" />
+  <link rel="icon" href="aset/mainlogo_1.webp" type="image/webp" sizes="5x5" />
   <body>
-    <h1 class="font-bold">ini tulisan</h1>
+    <h1 class="font-bold font-poppins">ini tulisan</h1>
   </body>
 </html>
