@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home - Readesign</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,9 +29,13 @@
         },
         extend: {
           colors: {
+            ungumuda: '#B58DFD',
+            ungutua: '#9154FA',
+            ungutext: '#6E51A3',
+            pinkmuda: '#AB5BBB',
             hijaumuda: '#94EC08',
             hijautua: '#98E51E',
-            kuning: '#F4C447',
+            kuning: '#FDB800',
             darkblue: '#25316D',
             biru: '#24DCF2',
             ijo: '#71A72D',
@@ -37,6 +48,7 @@
             poppins: ['Poppins'],
             peralta: ['Peralta'],
             inter: ['Inter'],
+            lato: ['Lato'],
           },
           screens: {
             '2xl': '1320px',
@@ -47,16 +59,424 @@
   </script>
 
   <link href="dist/output.css" rel="stylesheet" />
-  <link rel="icon" href="aset/mainlogo_1.webp" type="image/webp" sizes="5x5" />
-  <body>
-    <header>
-        <div class="w-full h-full bg-biru ">
-            <div class="p-5 flex justify-between" >
-                <img src="asset/Logo.png" alt="logo redesign" class="w-16 h-[70px] ml-5 mr-2">
-                <img src="asset/Redesign.png" alt="redesign header"class="w-1/4 h-1/4 pt-3">
-                <button>h </button>
-            </div>
+  <link rel="icon" href="asset/Logo.png" type="image/webp" sizes="5x5" />
+  <body class="bg-gradient-to-br from-ungumuda via-ungutua to-pinkmuda">
+    <!-- Header start -->
+    <header
+      class="sticky top-0 left-0 z-50 flex items-center w-full p-5 bg-transparent bg-white bg-opacity-50 rounded-xl backdrop-filter backdrop-blur-lg rounded-b-md bg-clip-padding"
+    >
+      <div class="justify-between ml-8 mr-30">
+        <div class="flex items-center">
+          <h1 class="xl:ml-32 lg:mr-36 xl:mr-96">
+            <a href="#" class="flex mt-1" aria-label="Kembali ke awal home">
+              <picture>
+                <source type="image/webp" srcset="asset/Logo.png" />
+                <img
+                  class="w-[75px] h-20 bg-cover"
+                  src="asset/Logo.png"
+                  alt="Readesign Logo"
+                />
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="asset/Redesign.png" />
+                <img
+                  class="w-24 h-10 mt-5 bg-cover"
+                  src="asset/Redesign.png"
+                  alt="Readesign title Logo"
+                />
+              </picture>
+            </a>
+          </h1>
+          <div class="flex items-center px-3">
+            <button
+              aria-label="Dropdown Menu"
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block py-2 right-4 lg:hidden"
+            >
+              <span
+                class="transition duration-300 ease-in-out origin-top-left hamburger-line"
+              ></span>
+              <span
+                class="transition duration-300 ease-in-out hamburger-line"
+              ></span>
+              <span
+                class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"
+              ></span>
+            </button>
+            <div
+              id="transfer"
+              class="self-center w-full mx-auto lg:w-1/3"
+            ></div>
+            <button
+              aria-label="Close"
+              id="exit"
+              type="button"
+              class="float-right mb-10 hover:text-red-400"
+            ></button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="flex px-3 py-2 mx-4 text-base text-white transition border-2 rounded-md bg-kuning group-hover:text-white group-hover:bg-yellow-500 delay-50"
+                    >Home</a
+                  >
+                </li>
+
+                <button
+                  class="inline-flex items-center px-3 py-2 mx-4 text-base rounded-lg text-slate-700 hover:text-black group-hover:border-b-2 border-kuning hover:border-b-2 focus:ring-4 focus:outline-none focus:ring-biru"
+                  type="button"
+                >
+                  About
+                </button>
+
+                <li class="group">
+                  <a
+                    aria-label="Link menuju halaman galeri"
+                    aria-label="Menuju galeri"
+                    href="galery.html"
+                    class="flex px-3 py-2 mx-4 text-base transition rounded-md text-slate-700 group-hover:text-black group-hover:border-b-2 border-kuning delay-50"
+                    >Galery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    aria-label="Menuju events"
+                    href="event.html"
+                    class="flex px-3 py-2 mx-4 text-base transition rounded-md text-slate-700 group-hover:text-black group-hover:border-b-2 border-kuning delay-50"
+                    >Events</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    aria-label="Menuju kontak"
+                    href="contact.html"
+                    class="flex px-3 py-2 mx-4 text-base transition rounded-md text-slate-700 group-hover:text-black group-hover:border-b-2 border-kuning delay-50"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
+    <!-- Header end -->
+
+    <!-- Hero section start -->
+    <section
+      id="home"
+      class="bg-no-repeat bg-contain py-28 md:bg-contain lg:bg-auto"
+    >
+      <div class="container">
+        <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="700">
+          <div class="w-full self-center px-4 lg:w-[45%]">
+            <h1
+              class="font-sans text-3xl font-bold text-white uppercase md:text-4xl lg:text-4xl"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              desain <span class="text-amber-400">logo</span> dan
+              <span class="text-amber-400">grafis</span> jadi lebih mudah
+            </h1>
+            <p
+              class="my-4 ml-1 text-xl font-thin leading-relaxed text-slate-200 text-gelap md:text-2xl"
+            >
+              Tingkatkan branding produk Anda dengan menunjukkan identitas brand
+              melalui ciri khas visual yang menarik, mudah dikenali dan mudah
+              diingat!
+            </p>
+            <button class="mt-5">
+              <a
+                href="login.html"
+                class="px-10 py-4 text-base font-semibold text-white capitalize transition duration-300 ease-in-out border-2 lg:text-2xl bg-kuning rounded-xl hover:opacity-80 hover:shadow-lg hover:text-black"
+              >
+                pesan sekarang
+              </a>
+            </button>
+            <button class="ml-5">
+              <a
+                href="#fitur"
+                class="px-6 py-4 text-base font-semibold text-white transition duration-300 ease-in-out bg-transparent border-2 lg:text-2xl rounded-xl hover:opacity-80 hover:shadow-lg hover:text-black"
+              >
+                Tentang Kami
+              </a>
+            </button>
+          </div>
+          <div class="w-full self-end lg:w-[55%]">
+            <div class="relative mt-10">
+              <img src="asset/Hero-img.png" alt="animasi home" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+    <section id="aboutReadesign">
+      <div class="flex flex-wrap">
+        <div
+          style="background-image: url('asset/aboutbg.png')"
+          class="bg-cover bg-no-repeat w-full flex h-[60vh] hover:shadow-xl border-gray-200"
+        >
+          <!-- text header dinamis start-->
+          <div class="flex w-full h-full bg-black/40">
+            <div class="mx-auto my-auto">
+              <h2
+                class="pb-1 text-2xl font-extrabold text-center text-white uppercase font-lato lg:text-4xl xl:text-7xl"
+              >
+                readesign
+              </h2>
+              <p
+                class="text-base text-center text-white font-lato lg:text-xl xl:text-2xl"
+              >
+                Graphic Design Services
+              </p>
+            </div>
+          </div>
+          <!-- text header dinamis end -->
+        </div>
+      </div>
+    </section>
+    <section id="about" class="relative">
+      <div>
+        <img
+          src="asset/pemisah.png"
+          class="w-full h-full -mt-20"
+          alt="background about readesign"
+        />
+        <div
+          class="absolute w-3/5 -translate-x-1/2 -translate-y-1/2 h-3/4 top-1/2 left-1/2"
+        >
+          <div class="flex justify-between mt-10">
+            <img
+              src="asset/aboutHero.png"
+              alt="Hero About"
+              class="w-1/2 h-full"
+            />
+            <h3
+              class="mt-5 ml-10 text-xl text-justify font-lato text-slate-200"
+            >
+              <span class="font-extrabold text-white">READESIGN </span>merupakan
+              Creative & Digital Agency Hub yang membantu bisnis dari berbagai
+              ukuran mulai dari bisnis rumahan, UMKM, bisnis rintisan (startup)
+              hingga Corporate yang akan melakukan Digital Marketing. Saat ini,
+              READESIGN dikelola oleh tim yang sudah berpengalaman di bidang
+              design grafis dan konten kreator.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="founder" class="-mt-8 bg-white">
+      <div class="container">
+        <div class="flex pt-20">
+          <h2
+            class="mx-auto text-2xl font-bold capitalize text-ungutext md:text-3xl font-poppins"
+          >
+            Stakeholder
+          </h2>
+        </div>
+
+        <div class="w-full py-20">
+          <div class="container px-6 mx-auto md:px-12">
+            <!-- title jabatan dinamis end -->
+
+            <div class="grid gap-12 md:grid-cols-3">
+              <!-- foto dan nama dinamis start -->
+              <div class="space-y-4 text-center">
+                <picture>
+                  <source type="image/webp" srcset="asset/rofibg.png" />
+                  <img
+                    loading="lazy"
+                    class="object-cover w-64 h-64 mx-auto rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64"
+                    src="asset/rofibg.png"
+                    alt="Foto Guru 1"
+                  />
+                </picture>
+
+                <div class="font-poppins text-ungutext">
+                  <h3 class="text-2xl font-extrabold">Divananda Rofi</h3>
+                  <h4 class="block font-semibold text-md">Editor</h4>
+                  <p class="mx-auto text-justify">
+                    Rofi memiliki spesialisasi dalam hal Desain Grafis, hubungan
+                    media, konten kreator, animasi video dan sosial media. Rofi
+                    sudah berpengalaman selama 1.5 tahun menjadi desainer, video
+                    editing, dan illustrator di beberapa media lokal.
+                  </p>
+                </div>
+              </div>
+              <!-- foto dan nama dinamis end -->
+
+              <!-- foto dan nama dinamis start -->
+              <div class="space-y-4 text-center">
+                <picture>
+                  <source type="image/webp" srcset="asset/dwibg.png" />
+                  <img
+                    loading="lazy"
+                    class="object-cover w-64 h-64 mx-auto rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64"
+                    src="asset/dwibg.png"
+                    alt="Foto Guru 2"
+                  />
+                </picture>
+                <div class="font-poppins text-ungutext">
+                  <h3 class="text-2xl font-extrabold">Dwi Syafrilia</h3>
+                  <h4 class="block font-semibold text-md">Editor</h4>
+                  <p class="mx-auto text-justify">
+                    Rilly memiliki peran dalam hal komunikasi strategis, konten
+                    kreator, & mengembangkan perusahaan dari sisi digital. Ia
+                    memiliki latar belakang yang kuat di industri media cetak
+                    maupun televisi dan selama 3 tahun memiliki pengalaman kerja
+                    di beberapa media.
+                  </p>
+                </div>
+              </div>
+              <!-- foto dan nama dinamis end -->
+
+              <!-- foto dan nama dinamis start -->
+              <div class="space-y-4 text-center">
+                <picture>
+                  <source type="image/webp" srcset="asset/albg.png" />
+                  <img
+                    loading="lazy"
+                    class="object-cover w-64 h-64 mx-auto rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64"
+                    src="asset/albg.png"
+                    alt="Foto Guru 3"
+                  />
+                </picture>
+                <div class="font-poppins text-ungutext">
+                  <h3 class="text-2xl font-extrabold">Firman Almadhani K</h3>
+                  <h4 class="block font-semibold text-md">Editor</h4>
+                  <p class="mx-auto text-justify">
+                    Firman mempunyai peran dalam hal mengembangkan perusahaan
+                    dari sisi digital dan rencana bisnis. Latar belakangnya
+                    sebagai product owner selama 2 tahun dan pengalaman kerja di
+                    beberapa perusahaan tentu akan sangat membantu dalam membuat
+                    desain grafis yang akan terus berkembang.
+                  </p>
+                </div>
+              </div>
+              <!-- foto dan nama dinamis end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="layanan" class="w-full h-full">
+      <div class="w-full h-full bg-[#EDE3FF]">
+        <div class="container text-center">
+          <div class="pt-20 text-ungutext font-poppins">
+            <h2 class="text-2xl font-extrabold capitalize md:text-3xl">
+              Layanan desain untuk anda
+            </h2>
+          </div>
+        </div>
+        <div class="w-3/4 h-full pb-20 mx-auto">
+          <div>
+            <p
+              class="pt-20 text-2xl font-extrabold text-center font-lato text-ungutext"
+            >
+              Kami memberikan
+              <span class="text-kuning">all in one solution</span> untuk
+              membangun branding bisnis anda
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center space-x-10 mt-14">
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Design Logo
+              </p>
+            </div>
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Company Profile
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center mt-2 space-x-10">
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Design Packaging
+              </p>
+            </div>
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Design Banner Ads / Iklan
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center mt-2 space-x-10">
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Design Merchandise
+              </p>
+            </div>
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Logo Animation
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center mt-2 space-x-10">
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Design Social Media
+              </p>
+            </div>
+            <div class="flex w-2/5 h-full py-2 pl-5 bg-ungumuda rounded-xl">
+              <img src="asset/trueIcon.png" alt="icon true" class="w-10 h-10" />
+              <p class="mt-1 ml-2 text-xl font-bold text-slate-50 font-lato">
+                Video Animasi Produk dan Jasa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gradient-to-b from-[#EDE3FF] to-slate-50">
+      <div class="w-full h-full">
+        <div class="container text-center">
+          <div class="pt-20 text-ungutext font-poppins">
+            <h2
+              class="w-1/2 mx-auto text-2xl font-extrabold capitalize md:text-3xl"
+            >
+              Mengapa anda harus menggunakan jasa desain kami
+            </h2>
+          </div>
+        </div>
+        <div class="w-3/5 h-full pb-20 mx-auto">
+          <div
+            class="grid border-8 border-white rounded-3xl py-3 px-5 grid-cols-4 bg-gradient-to-br from-[#B38AFD] via-[#9256FA] to-[#B38AFD]"
+          >
+            <div class="text-center border-2">
+              <img
+                src="asset/icon/time.png"
+                class="w-16 p-3 mx-auto border-2 mt-2 border-white h-[60px] bg-ungutua rounded-xl"
+                alt="ontime logo"
+              />
+              <p>asdasd</p>
+              <p>asdasd</p>
+              <p>asdasd</p>
+            </div>
+            <div class="text-center border-2">1</div>
+            <div class="text-center border-2"><img src="asset/" alt="" />1</div>
+            <div class="text-center border-2"><img src="asset/" alt="" />1</div>
+          </div>
+          <img src="asset/" alt="" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
