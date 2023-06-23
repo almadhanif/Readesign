@@ -20,6 +20,21 @@
       rel="stylesheet"
     />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1XXKYDD6R8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-1XXKYDD6R8');
+    </script>
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -862,28 +877,28 @@
             <div class="space-y-6">
               <!-- 4 logo start -->
               <div class="grid grid-cols-4 py-5">
-                <div class="w-4/5 h-4/5 flex flex-wrap ml-10">
+                <div class="flex flex-wrap w-4/5 ml-10 h-4/5">
                   <img
                     src="asset/icon/iconTadika.png"
                     alt="icon tadika mesra"
                     class="w-full h-full m-auto"
                   />
                 </div>
-                <div class="w-full h-4/5 flex flex-wrap ml-5">
+                <div class="flex flex-wrap w-full ml-5 h-4/5">
                   <img
                     src="asset/icon/iconPdc.png"
                     alt="icon PDC company"
                     class="w-full h-[55%] m-auto"
                   />
                 </div>
-                <div class="w-4/5 h-full flex flex-wrap ml-10 -mt-5">
+                <div class="flex flex-wrap w-4/5 h-full ml-10 -mt-5">
                   <img
                     src="asset/icon/iconKoi.png"
                     alt="icon koi"
                     class="w-4/5 h-full m-auto"
                   />
                 </div>
-                <div class="w-4/5 h-4/5 flex flex-wrap ml-5">
+                <div class="flex flex-wrap w-4/5 ml-5 h-4/5">
                   <img
                     src="asset/icon/iconMeevio.png"
                     alt="icon tadika mesra"
@@ -908,21 +923,21 @@
             <div class="space-y-6">
               <!-- 4 logo start -->
               <div class="grid grid-cols-3 py-5">
-                <div class="w-3/5 -mr-10 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto -mr-10">
                   <img
                     src="asset/sosmed1.png"
                     alt="icon tadika mesra"
                     class="w-full h-full m-auto"
                   />
                 </div>
-                <div class="w-3/5 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto">
                   <img
                     src="asset/sosmed2.png"
                     alt="icon PDC company"
                     class="w-full h-full m-auto"
                   />
                 </div>
-                <div class="w-3/5 -ml-10 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto -ml-10">
                   <img
                     src="asset/sosmed3.png"
                     alt="icon koi"
@@ -933,21 +948,21 @@
               <!-- 4 logo end -->
               <!-- 4 logo start -->
               <div class="grid grid-cols-3 py-5">
-                <div class="w-3/5 -mr-10 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto -mr-10">
                   <img
                     src="asset/sosmed4.png"
                     alt="icon tadika mesra"
                     class="w-full h-full m-auto"
                   />
                 </div>
-                <div class="w-3/5 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto">
                   <img
                     src="asset/sosmed5.png"
                     alt="icon PDC company"
                     class="w-full h-full m-auto"
                   />
                 </div>
-                <div class="w-3/5 -ml-10 mx-auto h-full">
+                <div class="w-3/5 h-full mx-auto -ml-10">
                   <img
                     src="asset/sosmed6.png"
                     alt="icon koi"
@@ -979,10 +994,10 @@
               class="w-1/2 h-full"
             />
             <h3
-              class="my-auto ml-10 text-2xl uppercase font-extrabold font-poppins text-justify text-white"
+              class="my-auto ml-10 text-2xl font-extrabold text-justify text-white uppercase font-poppins"
             >
               Segera konsultasikan kebutuhan desain anda kepada Readesign.
-              <p class="text-base capitalize text-slate-100 font-light mt-5">
+              <p class="mt-5 text-base font-light capitalize text-slate-100">
                 Klik tombol dibawah untuk memulai konsultasi
               </p>
               <p
@@ -995,7 +1010,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-7 h-7 ml-3"
+                  class="ml-3 w-7 h-7"
                 >
                   <path
                     stroke-linecap="round"
@@ -1011,11 +1026,11 @@
     </section>
 
     <!-- Footer section start-->
-    <footer id="footer" class="pt-12 pb-12 bg-slate-100 -mt-10">
+    <footer id="footer" class="pt-12 pb-12 -mt-10 bg-slate-100">
       <div class="container mt-16">
         <div class="flex flex-wrap">
           <div
-            class="w-full mx-auto -mr-14 mb-12 space-y-5 text-ungutext font-medium md:w-2/5"
+            class="w-full mx-auto mb-12 space-y-5 font-medium -mr-14 text-ungutext md:w-2/5"
           >
             <!-- Link Dinamis start -->
             <a href="#" class="flex mt-1" aria-label="Kembali ke awal home">
@@ -1028,7 +1043,7 @@
                 />
               </picture>
             </a>
-            <p class="font-bold text-base">
+            <p class="text-base font-bold">
               PT Readesign Yogyakarta, Jl. Ring Road Utara, Ngringin,
               Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa
               Yogyakarta 55281
@@ -1036,15 +1051,15 @@
             <!-- Link dinamis end -->
           </div>
 
-          <div class="w-full mx-auto px-4 mb-12 md:w-2/5">
-            <h2 class="font-bold text-ungutext text-2xl mb-5">Hubungi Kami</h2>
+          <div class="w-full px-4 mx-auto mb-12 md:w-2/5">
+            <h2 class="mb-5 text-2xl font-bold text-ungutext">Hubungi Kami</h2>
             <!-- call Dinamis start -->
             <div class="flex-wrap items-center space-y-5">
               <div class="flex text-ungutext hover:text-black">
                 <a
                   href="https://wa.me/+6289506850456"
                   target="_blank"
-                  class="w-16 h-16 mr-3 rounded-full text-slate-200 flex justify-center items-center border-slate-400 bg-ungutua hover:bg-purple-700"
+                  class="flex items-center justify-center w-16 h-16 mr-3 rounded-full text-slate-200 border-slate-400 bg-ungutua hover:bg-purple-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1061,7 +1076,7 @@
                 <a
                   href="https://wa.me/+6289506850456"
                   target="_blank"
-                  class="text-lg font-bold my-auto"
+                  class="my-auto text-lg font-bold"
                   >Whatsapp
                   <p class="flex-wrap font-light">089506850456</p>
                 </a>
@@ -1070,7 +1085,7 @@
                 <a
                   href="mailto:readesignyk@gmail.com"
                   target="_blank"
-                  class="w-16 h-16 mr-3 rounded-full text-slate-200 flex justify-center items-center border-slate-400 bg-ungutua hover:bg-purple-700"
+                  class="flex items-center justify-center w-16 h-16 mr-3 rounded-full text-slate-200 border-slate-400 bg-ungutua hover:bg-purple-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1090,7 +1105,7 @@
                 <a
                   href="mailto:readesignyk@gmail.com"
                   target="_blank"
-                  class="text-lg font-bold my-auto"
+                  class="my-auto text-lg font-bold"
                   >Email
                   <p class="flex-wrap font-light">readesignyk@gmail.com</p>
                 </a>
@@ -1101,7 +1116,7 @@
         </div>
         <!-- Made by love -->
         <div
-          class="py-8 border-t border-ungutua text-ungutext flex justify-center"
+          class="flex justify-center py-8 border-t border-ungutua text-ungutext"
         >
           <span class="pr-1"
             >Copyright&copy;2022 PT Readesign Yogyakarta <span>|</span></span
